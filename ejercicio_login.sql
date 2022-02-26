@@ -20,7 +20,7 @@ CREATE TABLE usuarios(
 );
 
 CREATE TABLE log_usuarios(
-    consecutivo     serial,
+    consecutivo     serial NOT NULL,
     cedula          integer         NOT NULL,
     nombre_log      character varying   NOT NULL,
     fecha_log       date            NOT NULL,

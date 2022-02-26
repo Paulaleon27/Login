@@ -10,14 +10,14 @@
 <body>
     <section>
         <div>
-            <form name="login" class="login" action="inicio_sesion.php" method="">
+            <form name="login" class="login" action="" method="">
                 <h1>LOGIN</h1>
                 <img type="image" src="images/mono1.png" >
                 <label >Usuario</label>
-                <input type="text" name="usuario" required autofocus>
+                <input type="usuario" id="usuario" name="usuario" required autofocus>
                 <label>Contraseña</label>
-                <input type="password" name="contrasena" required>
-                <button type="submit">Iniciar Sesión</button>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <input type="submit" value="ENTRAR">
             </form>
         </div>
     </section>

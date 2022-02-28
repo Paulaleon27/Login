@@ -49,6 +49,13 @@ html{
     padding: 20px;
 }
 
+#page a{
+    grid-area: nav;
+    color: #ffffff;
+    background-color: #846245;
+    padding: 20px;
+}
+
 #page main{
     grid-area: main;
     margin: 0;

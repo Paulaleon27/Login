@@ -1,3 +1,5 @@
+<?php include 'pagina_logs.php'; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,8 +16,8 @@
             <div id="datos_p">
                 <img type="image" src="images/mujer.png">
                 <div>
-                    <h1>Paula Leon</h1>
-                    <h1>Usuario: Paula27</h1>
+                    <h1> <?php echo $nombre_completo; ?> </h1>
+                    <h1>Usuario: <?php echo $usuario; ?></h1>
                 </div>
             </div>
         </header>
@@ -25,8 +27,9 @@
         </div>
         <!-- MENU -->
         <nav>
-            <h2>MENU</h2> <BR>
-            <h3>Logs</h3>
+            <h2>MENU</h2> <br>
+            <h3>Logs</h3> <br>
+            <a href="cerrar_sesion.php"><button>Cerrar Sesión</button></a>
         </nav>
         <!-- CONTENIDO -->
         <main>
@@ -40,30 +43,7 @@
                             <td><h4>NOMBRE LOG</h4></td>
                             <td><h4>FECHA</h4></td>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1098816968</td>
-                            <td>Inicio sesion</td>
-                            <td>15/02/2022</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1098816968</td>
-                            <td>Inicio sesion</td>
-                            <td>15/02/2022</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1098816968</td>
-                            <td>Inicio sesion</td>
-                            <td>15/02/2022</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1098816968</td>
-                            <td>Inicio sesion</td>
-                            <td>15/02/2022</td>
-                        </tr>
+                        <?php tablaLogs();?>
                     </table>
                 </div>
             </div>
